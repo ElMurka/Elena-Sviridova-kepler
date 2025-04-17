@@ -1,0 +1,172 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: #78c1cc; 
+  color: #7fc4ce; 
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #b9e7f7;
+  padding:5px;
+  text-align: center;
+  border-bottom: 2px solid #bfe6e8;
+  position: fixed;
+  width: 100%;
+  top:0px;
+
+}
+
+.header-container  {
+display: flex;
+list-style: none;
+margin:0px;
+padding: 5px;
+font-size: 15px;
+color: #bfe6e8;
+justify-content: space-between;
+
+}
+
+.logo {
+  color:#1c717c;
+  font-size: 30px;
+  font-weight: 700; 
+  font-family: 'Dancing Script', cursive;;
+
+}
+
+.nav-bar{
+  margin:7px;
+  padding:0px;
+  font-size: 20px;
+  display: flex;
+  font-family: 'dancing script', cursive;
+  justify-content: space-between;
+  align-items: center;
+
+  
+}
+  nav ul {
+  display: flex;
+  list-style: none;
+
+}
+  
+         
+    nav li {
+  margin-left: 50px;
+  display: flex;
+    }
+
+
+section {
+  padding: 40px 20px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+
+#learn-code .container {
+  text-align: justify;
+}
+
+h1, h2 {
+  color: #0d738f; 
+  font-weight:755;
+  text-align: center;
+
+}
+
+h1 {
+margin:12px;
+font-size: 20px;
+}
+
+h2 {
+  margin:15px;
+  font-size: 30px;
+}
+
+.experience-list {
+
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  text-align: center;
+  justify-content: center;}
+
+.experience-list li {
+  background-color: #138594;
+  padding: 20px;
+  margin: 25px 0;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+
+ 
+}
+
+#connect ul {
+  list-style: none;
+  padding:20px ;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  }
+
+#connect a {
+  text-decoration: none;
+  color: #b2e9ee;
+  background-color: #138594;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#connect a:hover {
+  background-color: #1bc9c0;
+  color: #bbeae9;
+
+}
+
+#Photo img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(162, 79, 79, 0.2);
+}
+
+footer {
+  background-color: #138594;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 15px;
+}
+
+button:hover {
+cursor: pointer;
+background-color: #8be0d9;}
+
+@media (max-width: 600px) {
+  .nav-bar ul {
+      flex-direction: column;
+  }
+
+  .experience-list {
+      flex-direction: column;
+  }
+
+  #connect ul {
+      flex-direction: column;
+  }
+}
