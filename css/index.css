@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8e8a3b308fdfcb88fbc703207cd237655c2a3420
 *{
   box-sizing: border-box;
   margin: 0px;
@@ -12,8 +16,18 @@ body {
 }
 
 header {
+<<<<<<< HEAD
   display: flex;
 
+=======
+  background-color: #b9e7f7;
+  padding:5px;
+  text-align: center;
+  border-bottom: 2px solid #bfe6e8;
+  position: fixed;
+  width: 100%;
+  top:0px;
+>>>>>>> 8e8a3b308fdfcb88fbc703207cd237655c2a3420
 
 }
 
@@ -163,4 +177,8 @@ background-color: #8be0d9;}
   #connect ul {
       flex-direction: column;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 8e8a3b308fdfcb88fbc703207cd237655c2a3420
