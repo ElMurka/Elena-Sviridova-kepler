@@ -2,112 +2,160 @@
 
  <html lang="en">
  <head>
-     <title id="project-name">Elena Sviridova's HTML Portfolio</title>
+     <title>Elena Sviridova's HTML Portfolio</title>
+     
      <meta charset="UTF-8">
      <meta name="description" content="My first HTML project">
      <meta name="author" content="Elena Sviridova">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
      <link rel="stylesheet" href="css/index.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
  
- <script src="https://kit.fontawesome.com/cfa5f7d96d.js" crossorigin="anonymous"></script></head>
- </head>
- <body>
-         <header>
- <div class="header-container">
-     <a href="/" class="logo">Elena Sviridova
-     </a>
-         <nav class="nav-bar">
-             <ul>
-                 <li><a href="#About">About</a></li>
-                 <li><a href="#experience">Experience</a></li>
-                 <li><a href="#Connect">Connect</a></li>
-                 <li><a href="#Photo">My photo</a></li>
-             </ul>
-         </nav>
- </div>
-     </header>   
- 
- <main>
-      <h1 id="About"></h1>
-   
-<html lang="en">
-<head>
-    <title id="project-name">Elena Sviridova's HTML Portfolio</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="My first HTML project">
-    <meta name="author" content="Elena Sviridova">
+ <script src="https://kit.fontawesome.com/cfa5f7d96d.js" crossorigin="anonymous"></script>
+</head>
 
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-
-<script src="https://kit.fontawesome.com/cfa5f7d96d.js" crossorigin="anonymous"></script></head>
-
-    
 <body>
-    <header>
-<div class="header-container">
-    <a href="/" class="logo">Elena Sviridova
-    </a>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="#About">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#Connect">Connect</a></li>
-                <li><a href="#Photo">My photo</a></li>
-            </ul>
-        </nav>
-</div>
-    </header>   
 
-<main>
-     <h1 id="About"></h1>
-    <section id="learn-code">
-        <div class="container">
-        <h2>About me</h2>
-    <p>Welcome to my first HTML project! This is a simple webpage that showcases my work. 
+  <header>
+    <div class="container header-container">
+      <a href="https://codethedream.org/" class="logo">LearnToCode</a>
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#connect">Connect</a></li>
+          <li><a href="#photo">My Photo</a></li>
+        </ul>
+      </nav>
+  </header>
+  
+  <main>
+
+<section class ="hero" id="hero">
+  <div class="container">
+               <h1>Elena Sviridova</h1>
+                     <h2>Welcome to my Portfolio</h2>
+   </div>
+</section>
+
+
+<section id="about" class="section">
+  <h2>About me</h2>
+  <div class="container flex">
+      <img src="img/3.jpg" alt="Elena Sviridova" width="300" height="200">
+  
+  <div class="container">
+          
+      <p>Let me introduce myself! My name is Elena. This is my first HTML project, and I’m thrilled to share it with you.
         I’ve just started learning how to code, and it’s already been an exciting experience. 
         Right now, I’m focusing on three main technologies: JavaScript, HTML, and CSS. These are
         building blocks of web development, and I’m eager to understand how websites and applications 
         are created from scratch.</p> 
-        </div>
-        </section>
+  </div>
+</section>
           
-  <section id="experience">
+  <section id="experience" class="section">
     <div class="container">
-        <h2>Experience</h2>
-        <p>I am a beginner in web development, but I am interested in learning and growing in this field.</p>
-        <p>I have already learned about:</p>
+              <h2>Experience</h2>
+        <p>I am a beginner in web development with a strong interest in learning and growing in this field.
+
+          I have previous experience as a Project Manager, in Sales and Customer Service where I led cross-functional teams, managed project timelines and budgets, and ensured successful delivery of goals. This background has given me strong organizational and communication skills that I’m now excited to apply to web development.
+         </p>
         <ul class="experience-list">
-            <li>JavaScript</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>HTML</li>
+          <li class="experience-item">
+            <div class="experience-header">
+              <span class="experience-title"> Project Manager</span>
+              <span class="experience-date">2007 - 2014</span>
+            </div>
+            <p class="experience-description">Coordinated teams, manages budgets and timelines, and ensures objectives are met efficiently.</p>
+            </li>
+            <li class="experience-item">
+              <div class="experience-header">
+                <span class="experience-title">Head of Logistics Department:</span>
+                <span class="experience-date">2014 - 2018</span>
+              </div>
+              <p class="experience-description">Leads logistics operations, including supply chain, transportation, warehousing, and inventory management. Ensures timely delivery, cost efficiency, and alignment with company goals.</p>
+            </li>
+            <li class="experience-item">
+              <div class="experience-header">
+                <span class="experience-title">Customer Support Representative</span>
+                <span class="experience-date">2018 - Present</span>
+              </div>
+              <p class="experience-description">Deliver exceptional service by resolving customer inquiries, ensuring satisfaction, and fostering loyalty, skilled in communication, problem-solving, and handling high-volume interactions with efficiency and empathy.</p>
+            </li>
+            <li class="experience-item">
+              <div class="experience-header">
+                <span class="experience-title">Code The Dream</span>
+                <span class="experience-date">2025 - Present</span>
+              </div>
+              <p class="experience-description">Learning the fundamentals of HTML including tags, structure, and best practices.</p>
+            </li>
+          </li>
+         
+          
         </ul>
-    
+    </div>
   </section>
   
+  <section id="skills">
+    <div class="container">
+        <h2>Skills</h2>
+   
+        </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
+          <ul>    </ul>
+    </div>
+  </section>
+
+
     <section id="connect">
+        <div class="container">
     <h2>Connect</h2>
     <ul>
-        <li> <a href="https://github.com/ElMurka" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <li> <a href="https://www.linkedin.com/in/elenasviridova/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li>
+        <a href="https://github.com/ElMurka" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/elenasviridova/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
                 </ul>
+                </div>
     </section>
-    <section id="Photo">
-        <h2>Photo</h2>
-        <img src="https://media.licdn.com/dms/image/v2/D4E03AQEDgG1q0eApfg/profile-displayphoto-shrink_800_800/B4EZUg7zbTHcAc-/0/1740014303560?e=1749081600&v=beta&t=QEB85z8ng-aZ3UQRiSLJDMXE0RMtZ-4f7RQlbpBpAZA" alt="Elena Sviridova" width="200" height="200">
-    </section>
+
+
+    <section id="photo">
+        <div class="container">
+            <h2>Photo</h2>
+          <img src="https://media.licdn.com/dms/image/v2/D4E03AQEDgG1q0eApfg/profile-displayphoto-shrink_800_800/B4EZUg7zbTHcAc-/0/1740014303560?e=1749081600&v=beta&t=QEB85z8ng-aZ3UQRiSLJDMXE0RMtZ-4f7RQlbpBpAZA" alt="Photo of Elena Sviridova" width="200" height="200">
+         
+
+         </div>   
+ </section>
+
+
     </main>
+
+
+
 
     <footer>
         <p>Project by Elena Sviridova</p>
         <p>All rights reserved &copy; 2025</p>
     </footer>
+
 </body>
 
 
