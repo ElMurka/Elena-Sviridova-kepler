@@ -1,14 +1,16 @@
-*{
+
+* {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
 
 body {
-  background-color: #a2dae2; 
-  color: #064b54; 
+  background-color: #a2dae2;
+  color: #064b54;
   font-family: 'Josefin Sans', sans-serif;
 }
+
 
 
 h1 {
@@ -51,7 +53,7 @@ justify-content: space-between;
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  }
+   }
 
 
 .logo {
@@ -94,12 +96,12 @@ header a:hover {
 }
 
 .hero{
-  background-image: url("/img/pastel.jpg");
+  background-image: url(https://gas-kvas.com/uploads/posts/2023-02/1675469503_gas-kvas-com-p-fonovii-risunok-kod-49.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #052b36;
   margin: 0px auto;
-  padding: 300px 300px;
+  padding: 300px 30px;
  text-align: right;
  line-height:1;
 
@@ -121,6 +123,9 @@ section {
   align-items: center;
   justify-content: space-between;
   gap:20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ 
   }
 
 .flex img {
@@ -130,6 +135,9 @@ section {
   border-radius: 20px;
   border: 3px solid #75ccd7;
   box-shadow: 2px 2px 10px rgb(20, 126, 225);
+  margin: 20px;
+ 
+  
   
  
 }
@@ -138,11 +146,12 @@ section {
   list-style: none;
   margin: 25px;
   padding: 0;
-  display: flex;
-  flex-direction:column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   
 }
+
 
 .experience-item {
   background-color: #0d7c8b;
@@ -231,18 +240,112 @@ footer {
   font-weight: 700;
 }
 
+/* ----------------- Mobile Styles ----------------- */
 
-
-@media (max-width: 600px) {
-  .nav-bar ul {
+  @media (max-width: 600px) {
+    
+    nav ul {
       flex-direction: column;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 10px;
+      padding: 2px 50px;
+      }
+    
+header a{
+  font-size: 10px;
+  padding: 2px 100px;
+}
+  
+    .experience-item {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    #connect a {
+      font-size: 20px;
+      padding: 8px 20px;
+    }
+  
+    #photo img {
+      width: 150px; 
+      height: 150px;
+    }
+  
+    footer {
+      font-size: 12px;
+    }
+
+ 
+  .hero {
+    flex-direction: column;
+    padding: 100px 20px;
+    text-align: center;
   }
 
-  .experience-list {
-      flex-direction: column;
+  #connect a {
+    font-size: 20px;
+    padding: 8px 20px;
+  }
   }
 
-  #connect ul {
-      flex-direction: column;
+/* ----------------- Tablet Styles ----------------- */
+@media (min-width: 601px) and (max-width: 1024px) {
+  
+  h1 {
+    font-size: 20px;
+    color: #0b5c6a;
+  }
+.logo {
+    font-size: 12px;
+    padding: 10px 0;
+    font-weight: 700;
+  }
+  header a {
+    font-size: 12px;
+    padding: 10px 20px;
+    font-weight: 700;
+   
+  }
+}
+  
+  .experience-item {
+    padding: 15px;
+    background-color: #0f97a8;
+  }
+
+  
+  #connect a {
+    font-size: 25px;
+    margin: 10px;
+  }
+
+
+
+
+/* ----------------- Desktop Styles ----------------- */
+@media (min-width: 1025px) {
+  
+  header a {
+    font-size: 20px;
+  }
+
+
+  .hero {
+    padding: 300px 100px;
+  }
+
+ 
+  .experience-item {
+    padding: 30px;
+    font-size: 18px;
+  }
+
+  /* Connect section: Larger buttons */
+  #connect a {
+    font-size: 30px;
+    padding: 15px 40px;
   }
 }
