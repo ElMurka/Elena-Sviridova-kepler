@@ -79,7 +79,7 @@ nav ul {
 header a {
   text-decoration: none;
   margin-top:0px;
-  padding:15px 10px;
+  padding:5px 10px;
   font-size: 20px;
   color:#052b36;
   font-weight: 500;
@@ -237,112 +237,120 @@ footer {
   font-weight: 700;
 }
 
+
 /* ----------------- Mobile Styles ----------------- */
-
-  @media (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 480px) {
     
-    nav ul {
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .logo {
-      font-size: 10px;
-      padding: 2px 50px;
-      }
-    
-header a{
-  font-size: 10px;
-  padding: 2px 100px;
-}
-  
-    .experience-item {
-      padding: 10px;
-      font-size: 14px;
-    }
-  
-    #connect a {
-      font-size: 20px;
-      padding: 8px 20px;
-    }
-  
-    #photo img {
-      width: 150px; 
-      height: 150px;
-    }
-  
-    footer {
-      font-size: 12px;
-    }
-
- 
-  .hero {
+  nav ul {
     flex-direction: column;
-    padding: 100px 20px;
-    text-align: center;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 10px;
+    padding: 2px 50px;
+    }
+  
+header a{
+font-size: 10px;
+padding: 2px 100px;
+}
+header a:hover{
+  background-color: #0d7c8b;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 150ms ease-in-out;
+}
+  .experience-item {
+    padding: 10px;
+    font-size: 14px;
   }
 
   #connect a {
     font-size: 20px;
     padding: 8px 20px;
   }
+
+  #photo img {
+    width: 150px; 
+    height: 150px;
   }
+
+  footer {
+    font-size: 12px;
+  }
+
+
+.hero {
+  flex-direction: column;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#connect a {
+  font-size: 20px;
+  padding: 8px 20px;
+}
+}
 
 /* ----------------- Tablet Styles ----------------- */
-@media (min-width: 601px) and (max-width: 1024px) {
-  
-  h1 {
-    font-size: 20px;
-    color: #0b5c6a;
-  }
-.logo {
-    font-size: 12px;
-    padding: 10px 0;
-    font-weight: 700;
-  }
-  header a {
-    font-size: 12px;
-    padding: 10px 20px;
-    font-weight: 700;
-   
-  }
-}
-  
-  .experience-item {
-    padding: 15px;
-    background-color: #0f97a8;
-  }
+@media (min-width: 600px) and (max-width: 1024px) {
 
+h1 {
+  font-size: 10px;
+  color:#0b5c6a;
+}
+.logo {
+  font-size: 10px;
+  padding: 5px 0;
+  font-weight: 700;
   
-  #connect a {
-    font-size: 25px;
-    margin: 10px;
-  }
+}
+header a {
+  font-size: 12px;
+  padding: 10px 20px;
+  font-weight: 700;
+margin: auto;
+  display: block;
+    
+}
+}
+
+.experience-item {
+  padding: 15px;
+  background-color: #0f97a8;
+}
+
+
+#connect a {
+  font-size: 25px;
+  margin: 10px;
+}
 
 
 
 
 /* ----------------- Desktop Styles ----------------- */
 @media (min-width: 1025px) {
-  
-  header a {
-    font-size: 20px;
-  }
+
+header a {
+  font-size: 20px;
+}
 
 
-  .hero {
-    padding: 300px 100px;
-  }
+.hero {
+  padding: 300px 100px;
+}
 
- 
-  .experience-item {
-    padding: 30px;
-    font-size: 18px;
-  }
 
-  /* Connect section: Larger buttons */
-  #connect a {
-    font-size: 30px;
-    padding: 15px 40px;
-  }
+.experience-item {
+  padding: 30px;
+  font-size: 18px;
+}
+
+
+#connect a {
+  font-size: 30px;
+  padding: 15px 40px;
+}
 }
