@@ -23,6 +23,7 @@
     <div class="container header-container">
       <a href="#" class="logo">LearnToCode</a>
       <nav class="nav">
+        <div class="hamburger">&#9776;</div>
         <ul>
           <li><a href="#about">About me</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -30,6 +31,8 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#connect">Connect</a></li>
           <li><a href="#photo">My Photo</a></li>
+          <li><a href="#messages">Leave a Message</a></li>
+
         </ul>
       </nav>
   </header>
@@ -102,17 +105,19 @@
     </div>
   </section>
   
-  <section id="skills">
-    <div class="container">
-        <h2>Skills</h2>
-   
-        </div>
-  </section>
 
   <section id="projects">
     <div class="container">
         <h2>Projects</h2>
           <ul>    </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+    <h2>Skills</h2>
+    <ul>   
+    </ul>
     </div>
   </section>
 
@@ -122,12 +127,12 @@
     <h2>Connect</h2>
     <ul>
       <li>
-        <a href="https://github.com/ElMurka" target="_blank">
-          <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/ElMurka" aria-label="github" target="_blank">
+          <i class="fa-brands fa-github" ></i>
         </a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/elenasviridova/" target="_blank">
+        <a href="https://www.linkedin.com/in/elenasviridova/" aria-label="linkedin" target="_blank">
           <i class="fa-brands fa-linkedin"></i>
         </a>
       </li>
@@ -146,19 +151,46 @@
  </section>
 
 
-    </main>
+   
+
+<section>
+  <h2>Leave a Message</h2>
+  <form name="leave_message">
+    <label for="usersName">Name:</label><br>
+    <input type="text" name="usersName" required><br>
+
+    <label for="usersEmail">Email:</label><br>
+    <input type="email" name="usersEmail" required><br>
+
+    <label for="usersMessage">Message:</label><br>
+    <textarea name="usersMessage" required></textarea><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
 
 
+<section id="messages">
+  <h2>Messages</h2>
+  <ul></ul>
+</section>
 
+ </main>
 
-    <footer>
-        <p>Project by Elena Sviridova</p>
-        <p>All rights reserved &copy; 2025</p>
-    </footer>
+    <script src="js/index.js"></script>
+    <script>
+  
+  
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
 
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+</script>
 </body>
 
 
 
 </html>
-
