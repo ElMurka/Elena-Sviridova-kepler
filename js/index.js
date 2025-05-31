@@ -8,7 +8,7 @@ document.body.appendChild(footer);
 
 const copyright = document.createElement('p');
 
-copyright.innerHTML = `&copy; Elena Sviridova ${thisYear}`;
+copyright.innerHTML =  `&copy; Elena Sviridova ${thisYear}`;
 
 footer.appendChild(copyright);
 
